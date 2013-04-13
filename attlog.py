@@ -121,6 +121,7 @@ class attlog(object):
 
                             # Fix headers for consistency ...
                             line[6] = "Msg/KB"
+                            line[10] = "In/Out"
                         else:
                             raise ParseError("Can't determine record type: %s"\
                                                  % str(line))
