@@ -15,7 +15,6 @@ __date__="$April 12, 2013$"
 
 from attlog import attlog
 from sys import argv, exit, stderr
-import json
 
 
 def run(*files):
@@ -26,7 +25,7 @@ def run(*files):
 
         masterlog += newlog
 
-    print json.dumps(masterlog)
+    print str(masterlog)
 
 
 if __name__=='__main__':
